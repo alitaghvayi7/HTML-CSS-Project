@@ -1,0 +1,105 @@
+.course{
+    overflow: hidden;
+}
+.course-title{
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+.course-title h4::before{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    top: 13px;
+    right: 560px;
+}
+.course-title h4::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: orange;
+    position: absolute;
+    top: 13px;
+    left: 560px;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart{
+    margin-top: 15px;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px #cdcdcd;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imgwrapper{
+    margin:20px auto;
+    height: 50%;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+.imgwrapper img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.imgwrapper:hover .imgoverlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.imgoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    transition: 1s;
+}
+.imgoverlay h2{
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cartbody{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    height: 40%;
+    line-height: 25px;
+}
+.cartbody a{
+    color: black;
+    text-decoration: none;
+}
+.cartbody a:hover{
+    color: orange;
+}
+.cartbody p{
+    color: rgb(65, 62, 62);
+}
+.cartbody .more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: #f80;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.cartbody .more:hover {
+    color: #fff;
+}

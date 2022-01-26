@@ -1,0 +1,112 @@
+.about h2{
+    width: 100px;
+    margin: auto;
+    border-bottom: 2px solid #d66f35;
+}
+.about-us{
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.aboutus-pic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aboutus-pic img{
+    display: block;
+    width: 60%;
+    height: 80%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.aboutus-pic img:hover{
+    filter: contrast(0.5);
+}
+.aboutus-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    padding-top: 30px;
+    text-align: center;
+    
+}
+.aboutus-title h4{
+    display: block;
+    border-bottom: 2px solid #a67563;
+    color: rgb(32, 31, 31);
+}
+.aboutus-title p{
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(32, 31, 31);
+    line-height: 28px;
+}
+.aboutus-title a{
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #f7f9f8;
+    background-color: #f2aa80;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.aboutus-title a:hover{
+    background-color: #a67563;
+    border-radius: 0 10px 0 10px;
+}
+
+.about2{
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.about2-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    padding-top: 30px;
+}
+.about2-title h4{
+    display: block;
+    border-bottom: 2px solid #a67563;
+    color: rgb(32, 31, 31);
+}
+.about2-title p{
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(32, 31, 31);
+    line-height: 28px;
+}
+.about2-title a{
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #f7f9f8;
+    background-color: #f2aa80;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.about2-title a:hover{
+    background-color: #a67563;
+    border-radius: 0 10px 0 10px;
+}
+.about2-pic{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:30px ;
+}
+.about2-pic img{
+    display: block;
+    width: 60%;
+    height: 80%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.about2-pic img:hover{
+    filter: contrast(0.5);
+}

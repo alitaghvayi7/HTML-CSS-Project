@@ -1,0 +1,115 @@
+.faq-header{
+    text-align: center;
+}
+.faq-header h2{
+    display: inline-block;
+    margin: 0 auto;
+    border-bottom:3px solid #5a5ac8 ;
+}
+.faq-container{
+    height:400px ;
+}
+.faq-wrapper{
+    height: 100%;
+}
+.faq-right{
+    height: 100%;
+    overflow: hidden;
+}
+.faq-left{
+    height: 100%;
+    overflow: hidden;
+}
+.faq-right-child{
+    height: 100%;
+    overflow: hidden;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faq-left-child{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faq-right-child .support{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.faq-right-child .support:hover i{
+    transform:scale(1.1);
+}
+.faq-right-child .support i{
+    color: #6b6bff;
+    font-size: 24px;
+    margin-left: 20px;
+    vertical-align: middle;
+    transition: .4s;
+}
+.faq-right-child .support h6{
+    font-size: 18px;
+}
+.faq-right-child .support p{
+    padding-right: 40px;
+    font-size: 16px;
+    color: rgb(148, 148, 148);
+}
+.faq-left-child .tabs {
+    overflow: hidden;
+    text-indent: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.faq-left-child .tabs .tab{
+    overflow: hidden;
+}
+.tabs input[type=radio]{
+    display: none;
+}
+.tabs .tab-label{
+    overflow: hidden;
+    display: block;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background-color: #6b6bff;
+    padding-top: 6px;
+    cursor: pointer;
+}
+.tabs .tab-label:hover{
+    background-color: #4c4cd4;
+}
+.tabs .tab-label::after{
+    content: "\276f";
+    margin-left: 20px;
+    /* padding-left: 2px; */
+    float: left;
+    color: #fff;
+    transition: .5s ease-in;
+    padding-top: 2px;
+    text-align: center;
+}
+.tabs .tab-content{
+    background-color: #efefef;
+    color: rgb(58, 53, 53);
+    max-height: 0;
+    transition: .5s max-height ease-in;
+}
+.tabs input:checked ~ .tab-content{
+    max-height: 100px;
+}
+.tabs input:checked + .tab-label::after{
+    transform: rotatez(-90deg) translate(18px,-18px);
+}

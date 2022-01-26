@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@keyframes topmenu{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes neon{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes neonthree1{
+    0%{
+        width: 3px;
+        height: 3px;
+        right: 0;
+        bottom: 0;
+    }
+    50%,100%{
+        width: 100%;
+        height: 3px;
+        right: 0;
+        bottom: 0;
+    }
+}
+@keyframes neonthree2{
+    0%{
+        width: 3px;
+        height: 3px;
+        top: 0;
+        left: 0;
+    }
+    50%,100%{
+        width: 100%;
+        height: 3px;
+        top: 0;
+        left: 0;
+    }
+}
+@keyframes neonthree3{
+    0%{
+        width: 3px;
+        height: 3px;
+        right: 0;
+        top: 0;
+    }
+    50%,100%{
+        width: 3px;
+        height: 100%;
+        right: 0;
+        top: 0;
+    }
+}
+@keyframes neonthree4{
+    0%{
+        width: 3px;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+    }
+    50%,100%{
+        width: 3px;
+        height: 100%;
+        bottom: 0;
+        left: 0-reverse both;
+    }
+}
+@keyframes campbtns{
+    0%{
+        transform: rotate(350deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+.topmenu{
+    height: 60px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #f8f7f9;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.topmenu nav{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: .5s linear;
+    animation: topmenu 1s 1 linear both;
+}
+.topmenu nav a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f7f9;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px;
+    animation: campbtns .9s linear both;
+}
+.topmenu nav a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+    font-size: 25px;
+    color: rgb(173, 173, 173);
+}
+.topmenu nav a i:hover{
+    color: #fff;
+}
+.topmenu nav a:nth-child(1):hover{
+    background-color: lightseagreen;
+}
+.topmenu nav a:nth-child(2):hover{
+    background-color:rgb(9, 29, 204);
+}
+.topmenu nav a:nth-child(3):hover{
+    background-color:rgb(255, 0, 149);
+}
+.topmenu nav a:nth-child(4):hover{
+    background-color:darkblue;
+}
+.topmenu nav a:nth-child(5):hover{
+    background-color:darkcyan;
+}
+.topmenu nav a:nth-child(6):hover{
+    background-color:rgb(22, 233, 22);
+}
+.topmenu nav a:nth-child(7):hover{
+    background-color:darkorange;
+}
+#twitter:target ~ nav{
+    background-color: lightseagreen;
+}
+#facebook:target ~ nav{
+    background-color:rgb(9, 29, 204);
+}
+#instagram:target ~ nav{
+    background-color:rgb(255, 0, 149);
+}
+#telegram:target ~ nav{
+    background-color:darkblue;
+}
+#linkedin:target ~ nav{
+    background-color:darkcyan;
+}
+#whatsapp:target ~ nav{
+    background-color:rgb(29, 221, 23);
+}
+.neoncontainer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+.neon{
+width: 300px;
+height: 200px;
+border-radius: 5px;
+overflow: hidden;
+position: relative;
+transform: rotate(10deg);
+}
+.neon span{
+    display: inline-block;
+    transition: .5s;
+    animation: neon 1s linear infinite;
+}
+.neon .top{
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to right,red,rgb(240, 160, 11),rgb(238, 238, 7));
+}
+.neon .bottom{
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right,rgb(238, 238, 7),rgb(240, 160, 11),red);
+}
+.neon .right{
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to bottom,rgb(238, 238, 7),rgb(240, 160, 11),red);
+}
+.neon .left{
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(to bottom,red,rgb(240, 160, 11),rgb(238, 238, 7));
+}
+.neon p{
+    color: #FFF;
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.neoncenter{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid rgb(14, 240, 33);
+    position: relative;
+    transition: .4s linear;
+    -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
+}
+.neoncenter:hover{
+    background-color: rgb(9, 255, 0);
+    box-shadow: 0 0 15px 15px rgb(146, 255, 37),
+    0 0 30px lightgreen;
+}
+.neoncenter p{
+    color: #FFF;
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.neonthree{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transition: .5s;
+    transform: rotate(-10deg);
+}
+.neonthree span{
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: yellow;
+}
+.neonthree .one{
+    right: 0;
+    bottom: 0;
+    animation: neonthree1 3s linear infinite alternate-reverse both;
+}
+.neonthree .two{
+    top: 0;
+    left: 0;
+    animation: neonthree2 3s linear infinite alternate-reverse both;
+}
+.neonthree .three{
+    right: 0;
+    top: 0;
+    animation: neonthree3 3s linear infinite alternate-reverse both;
+}
+.neonthree .four{
+    bottom: 0;
+    left: 0;
+    animation: neonthree4 3s linear infinite alternate-reverse both;
+}
+.neonthree p{
+    color: #FFF;
+    font-size: 34px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    width: 200px;
+    height: 150px;
+    border: 1px solid #FFF;
+    transition: 1s linear;
+}

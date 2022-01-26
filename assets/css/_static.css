@@ -1,0 +1,26 @@
+.static-wrapper{
+    background-color: #ffc412;
+    height: 140px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.static{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stat-item{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stat-item img{
+    width: 64px;
+    height: 64px;
+}

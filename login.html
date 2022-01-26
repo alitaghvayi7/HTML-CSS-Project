@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" style="width: 100%; height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="assets/css/Style-gird.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ثبت نام</title>
+</head>
+<body style="width: 100%; height: 100%;">
+    <main class="lg-su-parent">
+        <a id="login"></a>
+        <a id="signup"></a>
+        <section class="lg-su-child">
+            <div class="login-wrapper" id="login-wrapper">
+                <div class="login-content">
+                    <div class="logintitle-container">
+                        <button class="btn">
+                            <span>ورود</span>
+                            <i class="material-icons">public</i>
+                        </button>
+                    </div>
+                    <div class="loginmain">
+                        <form class="inputs" action="">
+                            <input type="email" name="usermail" id="usermail" placeholder="ایمیل">
+                            <input type="password" name="userpass" id="userpass" placeholder="کلمه عبور">
+                            <label for="rememberme">مرا بخاطر بسپار</label>
+                            <input type="checkbox" name="rememberme" id="rememberme">
+                            <br>
+                            <fieldset class="buttons">
+                                <input type="submit" value="ورود">
+                                <button type="button" class="signupbtn"><a href="#signup">ثبت نام</a></button> 
+                            </fieldset>  
+                         </form>
+                    </div>
+                    <div class="returnhome">
+                        <a href="index.html">بازگشت به صفحه اصلی</a>
+                    </div>
+                </div>
+            </div>
+            <div class="signup-wrapper" id="signup-wrapper">
+                <div class="signup-content">
+                    <div class="signuptitle-container">
+                        <button class="btn">
+                            <span>ثبت نام</span>
+                            <i class="material-icons">public</i>
+                        </button>
+                    </div>
+                    <div class="signup-main">
+                        <form action="">
+                            <input class="signupinput" type="email" name="signupmail" id="signupmail" placeholder="ایمیل">
+                            <input class="signupinput" type="text" name="signupusername" id="signupusername" placeholder="نام کاربری">
+                            <input class="signupinput" type="password" name="signuppass" id="signuppass" placeholder="کلمه عبور">
+                            <input class="signupinput" type="password" name="signuprepeatpass" id="signuprepeatpass" placeholder="تکرار کلمه عبور">
+                            <fieldset class="signupbtns">
+                                <input type="submit" value="ثبت نام">
+                                <button type="button" class="signupbtn"><a href="#login">ورود</a></button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="returnhome">
+                        <a href="index.html">بازگشت به صفحه اصلی</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>

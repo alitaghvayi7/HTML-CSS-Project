@@ -1,0 +1,37 @@
+.bg-blue{
+    background-color:#f7f9f8;
+    height: 40px;
+    color: #000;
+}
+.bg-blue .contact{
+    font-size: 12px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.bg-blue .contact i{
+    margin: 0 15px;
+    vertical-align: middle;
+    color: #111;
+}
+.bg-blue .contact span{
+    color: #000;
+    margin: 5px;
+    padding: 13px 0;
+}
+.bg-blue .social-media{
+    direction: ltr;
+    overflow: hidden;
+}
+.bg-blue .social-media a{
+    color: #111;
+    display: inline-block;
+    transition: 1s;
+    margin-right: -3px;
+}
+.social-media a:hover{
+    background-color: #f2aa80;
+}
+.bg-blue .social-media  i{
+    width: 40px;
+    padding: 12px;
+}

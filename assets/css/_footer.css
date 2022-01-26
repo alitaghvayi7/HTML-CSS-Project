@@ -1,0 +1,109 @@
+.footer{
+    background-color: rgb(8, 8, 53);
+}
+.footerwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 85%;
+    overflow: hidden;
+    border-bottom: 2px dashed #ec8825;
+}
+.part{
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    color: rgb(146, 146, 146);
+    text-align: justify;
+}
+.part .ic-container{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.part .ic-container i{
+    font-size: 40px;
+    transform: rotate(-15deg);
+    color: rgb(196, 253, 82);
+    vertical-align: middle;
+}
+.part .ic-container h3{
+    display: inline-block;
+    color: #f7f9f8;
+}
+.part .article{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    color: rgb(146, 146, 146);
+}
+.footercontainer .footer-sentence{
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    color: rgb(146, 146, 146);
+    padding: 10px;
+}
+.part .services{
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.part .services h4{
+    border-bottom:1px solid #413e3e ;
+    padding: 5px 0;
+}
+.part .followus{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.part .followus h4{
+    border-bottom:1px solid #413e3e ;
+    padding: 5px 0;
+}
+.part .followus div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.part .followus .search{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.part .followus .search button{
+    background-color: #be7e2a;
+    color: #fff;
+    border: none;
+    padding: 0 4px;
+}
+.part .ways-to-contact{
+    width: 100%;
+    height: 100%;
+}
+.part .ways-to-contact h4{
+    border-bottom:1px solid #413e3e ;
+    padding: 5px 0;
+}
+.part .ways-to-contact .myemail{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.part .ways-to-contact .myphone{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.part .ways-to-contact .myaddress{
+    margin-top: 10px;
+    font-size: 12px;
+}

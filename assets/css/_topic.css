@@ -1,0 +1,78 @@
+.topic-title{
+    text-align: center;
+    margin: 40px auto;
+}
+.topic-title h2{
+    display: inline-block;
+    margin: auto;
+    border-bottom: 2px solid #ffc412;
+}
+.magazine{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+.item{
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border: 2px solid #d1d0d0;
+    border-radius: 3px;
+    margin: 15px 0;
+}
+.logocontainer{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin: auto;
+    border-bottom: 2px solid #efefef;
+}
+.logocontainer:hover img{
+    transform: scale(1.2) rotate(10deg);
+}
+.logocontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.description{
+    margin-top: 10px;
+    width: 95%;
+    height: 45%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.description a{
+    text-decoration: none;
+    color: #e7e9e8;
+    background-color: #024873;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.description a:hover{
+    background-color: #025e73;
+}
+.description .topicicons{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+}
+.description .topicicons .like{
+    color: #f00;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.description .topicicons .comment{
+    color: lightslategray;
+    cursor: pointer;
+    margin: 0 5px;
+}
